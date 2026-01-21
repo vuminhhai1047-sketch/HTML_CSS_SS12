@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: antiquewhite;
+}
+
+
+.header {
+    background-color: bisque;
+    height: 100px;
+    display:flex;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 25px;
+    width: 100%;
+}
+
+.logo {
+    color:aqua;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.list_link a {
+    text-decoration: none;
+    color: black;
+}
+
+.list_link {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
+
+
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .icon {
+    display: block;
+    }
+    .header {
+        justify-content: flex-end;
+    }
+
+    .header a {
+        display: block;
+    }
+}
+
+
+/* Dành cho thiết bị 481px - 768px */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .icon {
+    display: block;
+  }
+}
+
+/* Danh cho thiết bị 769px - 1279px */
+
+@media screen and (min-width: 769px) and (max-width: 1279) {
+    .icon {
+    display: none;
+}
+}
+
+@media screen and (min-width: 1280px) {
+    .icon {
+    display: none;
+}
+}

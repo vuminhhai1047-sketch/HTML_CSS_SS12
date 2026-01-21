@@ -1,0 +1,28 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.container {
+
+}
+
+.header {
+    height: 63px;
+    background: linear-gradient(90deg, #0d6efd,#0b5ed7);
+}
+
+.course-process {
+    background-color: #fff;
+    border: 1px solid #dadada;
+    padding: 30px;
+}
+
+
+.my-learning{}
+
+.course-recommend{}
+
+

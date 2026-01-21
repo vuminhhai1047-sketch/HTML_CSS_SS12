@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.edulearn-footer {
+    background-color: #0b1120;
+    color: #94a3b8;
+    padding-top: 80px;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.brand-info {
+    flex: 2;
+    padding-right: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #818cf8;
+}
+
+.brand-desc {
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.social-circles {
+    display: flex;
+    gap: 15px;
+}
+
+.social-item {
+    width: 38px;
+    height: 38px;
+    background-color: #1e293b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.column-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.link-list,
+.contact-list {
+    list-style: none;
+}
+
+.link-list li,
+.contact-list li {
+    font-size: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1e293b;
+    padding: 30px 0;
+}
+
+.bottom-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        flex: 0 0 calc(50% - 20px);
+        margin-bottom: 30px;
+    }
+
+    .brand-info {
+        flex: 0 0 100%;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-column {
+        flex: 0 0 100%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
