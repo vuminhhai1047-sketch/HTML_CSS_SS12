@@ -1,35 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="btth.css">
+    <title>BTTH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./btth.css">
 </head>
+
 <body>
-    <div class = "container">
-        <header class = "header"></header>
-        <section class = "course-process"></section>
-        <section class = "my-learning">
-            <div class = "list-course">
-                <div class = "course-item">1</div>
-                <div class = "course-item">2</div>
-                <div class = "course-item">3</div>
-                <div class = "course-item">1</div>
-                <div class = "course-item">2</div>
-                <div class = "course-item">3</div>
-            </div>
-        </section>
-        <section class = "course-recommend">
-            <div class = "list-course">
-                <div class = "course-item">1</div>
-                <div class = "course-item">2</div>
-                <div class = "course-item">3</div>
-                <div class = "course-item">1</div>
-                <div class = "course-item">2</div>
-                <div class = "course-item">3</div>
-            </div>
-        </section>
+    <input type="checkbox" id="nav-toggle" hidden>
+
+    <header class="navbar">
+        <div class="logo">Elearning</div>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm khóa học...">
+        </div>
+        <nav class="desktop-links">
+            <a href="#">Khóa học</a>
+            <a href="#">Tiến độ</a>
+            <a href="#">Hồ sơ</a>
+        </nav>
+        <label for="nav-toggle" class="menu-icon">☰</label>
+    </header>
+
+    <div class="overlay">
+        <label for="nav-toggle"></label>
     </div>
+
+    <main class="main-content">
+        <section class="welcome-card">
+            <div class="welcome-text">
+                <h2>Xin chào, Bạn tôi!</h2>
+                <p>Chúc bạn học tập hiệu quả hôm nay</p>
+            </div>
+            <div class="total-progress">
+                <p>Tiến độ tổng: 68%</p>
+                <div class="progress-bg">
+                    <div class="progress-fill" style="width: 68%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="section-label">Khóa học đang học</h3>
+        <div class="row">
+            <div class="column col-3">
+                <div class="card">
+                    <div class="card-thumb" style="background-image: url('https://picsum.photos/400/200?random=1')">
+                    </div>
+                    <div class="card-details">
+                        <h4>CSS Flexbox & Grid</h4>
+                        <p>Hoàn thành: 85%</p>
+                        <button class="btn-blue">Tiếp tục học</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-3">
+                <div class="card">
+                    <div class="card-thumb" style="background-image: url('https://picsum.photos/400/200?random=2')">
+                    </div>
+                    <div class="card-details">
+                        <h4>JavaScript Cơ bản</h4>
+                        <p>Hoàn thành: 42%</p>
+                        <button class="btn-blue">Tiếp tục học</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-3">
+                <div class="card">
+                    <div class="card-thumb" style="background-image: url('https://picsum.photos/400/200?random=3')">
+                    </div>
+                    <div class="card-details">
+                        <h4>Responsive Web Design</h4>
+                        <p>Hoàn thành: 95%</p>
+                        <button class="btn-blue">Tiếp tục học</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-label">Khóa học gợi ý</h3>
+        <div class="row">
+            <div class="column col-2">
+                <div class="card">
+                    <div class="card-thumb" style="background-image: url('https://picsum.photos/400/200?random=4')">
+                    </div>
+                    <div class="card-details">
+                        <h4>React cho người mới</h4>
+                        <button class="btn-blue">Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-2">
+                <div class="card">
+                    <div class="card-thumb" style="background-image: url('https://picsum.photos/400/200?random=5')">
+                    </div>
+                    <div class="card-details">
+                        <h4>Python Cơ bản</h4>
+                        <button class="btn-blue">Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
